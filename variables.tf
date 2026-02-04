@@ -1,3 +1,9 @@
+variable "resource_group_name" {
+  description = "Name of the resource group into which to deploy the VPC"
+  type        = string
+  default     = "myrg"
+}
+
 variable "vpc_name" {
   description = "Name for the VPC"
   default     = "myvpc"
