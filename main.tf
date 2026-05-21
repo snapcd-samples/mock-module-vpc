@@ -14,3 +14,11 @@ resource "random_uuid" "public_subnet_id" {
 resource "random_uuid" "private_subnet_id" {
   depends_on = [time_sleep.wait_10s]
 }
+
+resource "null_resource" "always_fail" {
+  depends_on = [time_sleep.wait_10s]
+
+  provisioner "local-exec" {
+    command = "exit 1"
+  }
+}
