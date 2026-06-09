@@ -1,5 +1,5 @@
-resource "tim_sleep" "wait_10s" {
-  create_duration  = "10s"
+resource "time_sleep" "wait_10s" {
+  creat_duration  = "10s"
   destroy_duration = "10s"
 }
 
