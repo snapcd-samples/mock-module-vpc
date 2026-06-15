@@ -10,7 +10,7 @@ output "public_subnet_id" {
 
 output "private_subnet_id" {
   description = "ID of the private subnet"
-  value       = random_uui.private_subnet_id.result
+  value       = random_uuid.private_subnet_id.result
 }
 
 output "public_subnet_cidr" {
