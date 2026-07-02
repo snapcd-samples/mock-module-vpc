@@ -1,5 +1,5 @@
 resource "time_sleep" "wait_10s" {
-  creat_duration  = "10s"
+  create_duration  = "10s"
   destroy_duration = "10s"
 }
 
