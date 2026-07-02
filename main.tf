@@ -14,3 +14,7 @@ resource "random_uuid" "public_subnet_id" {
 resource "random_uuid" "private_subnet_id" {
   depends_on = [time_sleep.wait_10s]
 }
+
+resource "random_uuid" "some_other_id" {
+  depends_on = [time_sleep.wait_10s]
+}
