@@ -23,8 +23,8 @@ output "private_subnet_cidr" {
   value       = var.private_subnet_cidr
 }
 
-# output "some_other_id" {
-#   description = "Some other ID"
-#   value       = random_uuid.some_other_id.result
-# }
+output "some_other_id" {
+  description = "Some other ID"
+  value       = random_uuid.some_other_id.result
+}
 
